@@ -5,8 +5,14 @@
 
 ---
 
-- **K5 Documents**
+- **📄 K5 Documents**
 
   - [Installation](k5documents/installation.md)
   - [Configuration](k5documents/configuration.md)
   - [Usage](k5documents/usage.md)
+
+- **🔐 K5 Skillcheck**
+
+  - [Installation](k5skillcheck/installation.md)
+  - [Usage](k5skillcheck/usage.md)
+  - [Configuration](k5skillcheck/configuration.md)

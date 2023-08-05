@@ -8,6 +8,12 @@ Download the latest version from [Github](https://github.com/kac5a/k5_documents/
 
 !> Make sure you downloaded the _*k5_documents_X.X.X.zip*_ file from the **Assets** section
 
+## Dependencies
+
+> **Framework**: [ESX](https://github.com/esx-framework/esx_core) or [QBCore](https://github.com/qbcore-framework/qb-core)
+
+> **MySQL**: [oxmysql](https://github.com/overextended/oxmysql) or [mysql-async](https://github.com/brouznouf/fivem-mysql-async)
+
 ## Installation
 
 1. Find your _resources_

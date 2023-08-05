@@ -1,10 +1,10 @@
 # Usage
 
+---
+
 ## Templates
 
 By default, no job can create documents. This script's main goal was to eliminate the need to edit the configuration to create new type of documents as a server developer.
-
----
 
 ?> Players in the specified job and job grade can create templates for that job.
 
