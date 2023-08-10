@@ -47,8 +47,8 @@ const AVAILABLE_JOBS = [
 | Variable            | Usage                                                                                                                                                                                                     |
 | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **_job_**           | The name of the job that can acces the document creation menu                                                                                                                                             |
-| **_templateGrade_** | Here you can define the job grades that can access the document creation menu.<br />**Example**: `[1, 5]`                                                                                                 |
-| **_logo_**          | The link of the logo that will be printed on the document this job creates<br />As you can see in the example, it can be an external URL, or you can provide a local file. Make sure the path is correct. |
+| **_templateGrade_** | Here you can define the job grades that can access the template creation menu.<br />**Example**: `[1, 5]`                                                                                                 |
+| **_logo_**          | The link of the logo that will be printed on the documents this job create<br />As you can see in the example, it can be an external URL, or you can provide a local file. Make sure the path is correct. |
 
 ### Citizen templates
 
