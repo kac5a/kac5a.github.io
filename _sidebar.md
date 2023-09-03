@@ -16,3 +16,9 @@
   - [Installation](k5skillcheck/installation.md)
   - [Usage](k5skillcheck/usage.md)
   - [Configuration](k5skillcheck/configuration.md)
+
+- **💬 K5 Notify**
+
+  - [Installation](k5notify/installation.md)
+  - [Usage](k5notify/usage.md)
+  - [Configuration](k5notify/configuration.md)
