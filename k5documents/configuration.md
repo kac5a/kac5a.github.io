@@ -13,6 +13,7 @@ The lua section provides the basics of the script. More complex configurations c
 | Config.**Command**          | The command the players can open the documents panel with.<br />Set to `nil` if you don't want players to use the command<br /><br />**Example**: `"documents"`                                        |
 | Config.**RegisterKey**      | The key the players can open the documents panel.<br />Set to `nil` if you don't want players to use a key.<br />It will not work if **Config.Command** is set to `nil` <br /><br />**Example**: `"k"` |
 | Config.**DocumentItemName** | The name of the item you want to open the documents panel.<br />Set to `nil` if you don't want players to use an item.<br /><br />**Example**: `"wallet"`                                              |
+| Config.**BirthdateFormat**  | The date format your framework uses. For ESX the default is `'DD/MM/YYYY'`, for QBCore, it's `'YYYY-MM-DD'`. Check your database to make sure the config is correct.                                   |
 | Config.**PaperProp**        | The name and rotation of the prop to be used when accessing the documents panel.<br />Don't change anything if it works fine on your server.                                                           |
 | Config.**Locale**           | Localizaition table. Feel free to translate the texts to your own language.                                                                                                                            |
 
