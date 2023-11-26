@@ -29,7 +29,7 @@ Citizen.CreateThread(function()
 end)
 ```
 
-2. If the player pressed the key, we would like the skillcheck script to take action and show the player the UI. If they succeed, the export return `true` and we can proceed. If they failed, we can handle that in the `else` branch.
+2. If the player pressed the key, we would like the skillcheck script to take action and show the player the UI. If they succeed, the export returns `true` and we can proceed. If they failed, we can handle that in the `else` branch.
 
 ```lua
 Citizen.CreateThread(function()

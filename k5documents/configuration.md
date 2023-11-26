@@ -19,7 +19,7 @@ The lua section provides the basics of the script. More complex configurations c
 
 ## JavaScript configuration
 
-?> All JavaScript configurations can be found in the `web/build/config.js` file. Open that file in an editor.
+!> All JavaScript configurations can be found in the <br/>`web/build/config.js`<br/> file. Open that file in an editor.
 
 ### Set up jobs
 
@@ -27,33 +27,33 @@ Your file should look something like this. Here we've defined 3 different jobs t
 
 ```js
 const AVAILABLE_JOBS = [
-  {
-    job: 'police',
-    templateGrades: [3, 4],
-    logo: 'https://i.imgur.com/YsTyMCc.png',
-  },
-  {
-    job: 'ambulance',
-    templateGrades: [3],
-    logo: 'https://i.pinimg.com/564x/6b/88/4f/6b884f7ebe28ff56a0e1fd9f5c47890a.jpg',
-  },
-  {
-    job: 'mechanic',
-    templateGrades: [4],
-    logo: '/web/build/mechaniclogo.jpg',
-  },
+	{
+		job: 'police',
+		templateGrades: [3, 4],
+		logo: 'https://i.imgur.com/YsTyMCc.png',
+	},
+	{
+		job: 'ambulance',
+		templateGrades: [3],
+		logo: 'https://i.pinimg.com/564x/6b/88/4f/6b884f7ebe28ff56a0e1fd9f5c47890a.jpg',
+	},
+	{
+		job: 'mechanic',
+		templateGrades: [4],
+		logo: '/web/build/mechaniclogo.jpg',
+	},
 ]
 ```
 
-| Variable            | Usage                                                                                                                                                                                                     |
-| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **_job_**           | The name of the job that can acces the document creation menu                                                                                                                                             |
-| **_templateGrade_** | Here you can define the job grades that can access the template creation menu.<br />**Example**: `[1, 5]`                                                                                                 |
-| **_logo_**          | The link of the logo that will be printed on the documents this job create<br />As you can see in the example, it can be an external URL, or you can provide a local file. Make sure the path is correct. |
+| Variable            | Usage                                                                                                                                                                                                      |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **_job_**           | The name of the job that can acces the document creation menu                                                                                                                                              |
+| **_templateGrade_** | Here you can define the job grades that can access the template creation menu.<br />**Example**: `[1, 5]`                                                                                                  |
+| **_logo_**          | The link of the logo that will be printed on the documents this job create.<br />As you can see in the example, it can be an external URL, or you can provide a local file. Make sure the path is correct. |
 
 ### Citizen templates
 
-Here you can define default document template that can be accessed by anyone.
+Here you can define default document templates that can be accessed by anyone.
 
 !> If you don't want any citizen templates, delete everything inside the `[]` like this: `const CITIZEN_TEMPLATES = []`
 

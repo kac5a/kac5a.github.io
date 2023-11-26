@@ -28,6 +28,10 @@ TriggerClientEvent("k5_notify:notify", source, 'Notification', 'This is a notifi
 
 ## Replacing the Framework notification
 
+!>**IMPORTANT**<br/>
+The script does not support the tilde coloring that the default FiveM notification uses. This causes some messages to appear in an unformatted way.
+To remove this, you have to manually delete the tilde colorings from your message strings
+
 You can replace the default notifications on your framework to use the K5 notifications. This is a bit harder method, make sure you know what you're doing.
 
 ### ESX
@@ -62,11 +66,53 @@ end
 ...
 ```
 
-!>**IMPORTANT**<br/>
-The script does not support the tilde coloring that the default FiveM notification uses. This causes some messages to appear in an unformatted way.
-To remove this, you have to manually delete the tilde colorings from your message strings
+### QBCore
 
-### QBCore (WIP)
+To replace the ESX notification, you have to navigate to the `qb-core/client/functions.lua` file
 
-?> **Work In Progress**<br/>
-I'm not using QBCore at all, so I would love to get help on Discord or GitHub about this.
+Here you have to find the `QBCore.Functions.Notify` function
+
+```lua
+...
+
+function QBCore.Functions.Notify(text, texttype, length)
+    if type(text) == "table" then
+        local ttext = text.text or 'Placeholder'
+        local caption = text.caption or 'Placeholder'
+        texttype = texttype or 'primary'
+        length = length or 5000
+        SendNUIMessage({
+            action = 'notify',
+            type = texttype,
+            length = length,
+            text = ttext,
+            caption = caption
+        })
+    else
+        texttype = texttype or 'primary'
+        length = length or 5000
+        SendNUIMessage({
+            action = 'notify',
+            type = texttype,
+            length = length,
+            text = text
+        })
+    end
+end
+
+...
+```
+
+Change the function so that it calls the notification export with the given parameters
+
+```lua
+...
+
+function QBCore.Functions.Notify(text, texttype, length)
+    return exports["k5_notify"]:notify('YOUR SERVER NAME', text, texttype)
+end
+
+...
+```
+
+?>Some `texttype` variables might be missing, but you can create them following the [Configuration](/k5notify/configuration?id=add-new-notifications) tutorial

@@ -10,19 +10,19 @@ By default, no job can create documents. This script's main goal was to eliminat
 
 In this example, we will create a parking ticket template for the `police` job.
 
-1. Open the documents panel and navigate to the `Templates` menu. Make sure you are set to the proper job and job grade to yourself.
+1. Open the documents panel and navigate to the `Templates` menu. Make sure you've set your job and job grade properly.
    ![Template menu](https://i.imgur.com/O59KR8M.png)
-2. Click on the `New Template` button. Here you can provide the information about this document type
+2. Click on the `New Template` button. Here you can provide the information about this document type.
    ![New template](https://i.imgur.com/hYVx5H1.png)
 
-| Field                    | Usage                                                                                                                                                         |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Document name**        | This is the name of the template. This will show up in the document selection menu                                                                            |
-| **Document description** | This is the description section. Keep it short to provide space to the document creator's data                                                                |
-| **Fields**               | These fields will be fillable when someone creates a new document. Here you add the **name of the field** and not the value<br />**Example**: _Date of birth_ |
-| **Information title**    | This is the title if the information section                                                                                                                  |
-| **Information template** | This is the default value of the information section                                                                                                          |
-| **Minimum job grade**    | This is the first job grade that can create this type of document section                                                                                     |
+| Field                    | Usage                                                                                                                                                        |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Document name**        | This is the name of the template. This will show up in the document selection menu                                                                           |
+| **Document description** | This is the description section. Keep it short to provide space for the document creator's data                                                              |
+| **Fields**               | These fields will be fillable when someone creates this document. Here you add the **name of the field** and not the value<br />**Example**: _Date of birth_ |
+| **Information title**    | This is the title if the information section                                                                                                                 |
+| **Information template** | This is the default value of the information section                                                                                                         |
+| **Minimum job grade**    | This is the first job grade that can create this type of document section                                                                                    |
 
 3. This is the result of creating the template
    ![Filled template](https://i.imgur.com/ZrKHFaV.png)
